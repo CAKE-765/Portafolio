@@ -1,0 +1,133 @@
+/* Galería */
+.galeria {
+    padding: 60px 8%;
+    background: #0f172a;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Encabezado */
+.encabezado {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.encabezado h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+    color: #38bdf8;
+}
+
+.encabezado p {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+/* Contenedor */
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background: #1e293b;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #334155;
+    transition: all 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen */
+.imagen {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.tarjeta:hover .imagen img {
+    transform: scale(1.05);
+}
+
+/* Contenido */
+.contenido {
+    padding: 25px;
+}
+
+.categoria {
+    color: #38bdf8;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.contenido h2 {
+    font-size: 21px;
+    margin: 12px 0;
+}
+
+.contenido p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Tecnologías */
+.tecnologias {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tecnologias span {
+    background: #334155;
+    color: #7dd3fc;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Botón */
+.btn-proyecto {
+    display: inline-block;
+    text-decoration: none;
+    color: #38bdf8;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.btn-proyecto:hover {
+    border-color: #38bdf8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .galeria {
+        padding: 40px 5%;
+    }
+
+    .encabezado h1 {
+        font-size: 30px;
+    }
+
+
+}
