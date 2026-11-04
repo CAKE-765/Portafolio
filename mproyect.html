@@ -5,95 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Proyectos</title>
-    <link rel="stylesheet" href="./mstyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 </head>
 
 <body>
-    <section class="galeria">
-        <div class="encabezado">
-            <h1>Mis proyectos</h1>
-            <p>Una colección de trabajos y proyectos que he desarrollado.</p>
-        </div>
+    <header class="header my-3 ">
+        <nav class="nav justify-content-between justify-content-center nav-tabs p-5 fg-success fg-50 font-monospace ">
+            <a class="nav-link-active text-decoration-none fg-success fg-50" href="./grid.html">
+                <h1 class="nav-item text-4xl ">Mi Perfil Profesional</h1>
+            </a>
+            <a class="nav-link-active text-decoration-none fg-success fg-50" href="./mproyect.html">
+                <h2 class="text-4xl">Mis Proyectos</h2>
+            </a>
+        </nav>
+    </header>
 
-        <div class="contenedor-tarjetas">
+    <div class="d-flex flex-column align-items-center justify-content-center my-5 font-monospace">
+        <h1>Mis proyectos</h1>
+        <p>Una colección de trabajos y proyectos que he desarrollado.</p>
+    </div>
 
-            <article class="tarjeta">
-                <div class="imagen">
-                    <img src="img/proyecto1.png" alt="Proyecto 1">
+    <main class="d-grid max-h-100 max-w-100 font-monospace"
+        style="grid-template-columns: 1fr 1fr 1fr; align-items: center; justify-items: center; gap: 2rem; padding: 2rem;">
+        <section class="card" style="max-width: 320px">
+            <img src="./IMAGENES/EleanorAccoladeGlyph.webp" class="card-img-top" alt="Proyecto 1">
+            <div class="card-body">
+                <h2 class="card-title">Nombre del proyecto</h2>
+                <p class="card-text">
+                    Breve descripción del proyecto, explicando
+                    su objetivo y las funciones principales.
+                </p>
+                <div class="card-footer">
+                    <span>HTML</span>
+                    <span>CSS</span>
                 </div>
 
-                <div class="contenido">
-                    <span class="categoria">Desarrollo web</span>
+                <a href="#" class="btn-solid theme-primary">Ver proyecto ↗</a>
+            </div>
+        </section>
 
-                    <h2>Nombre del proyecto</h2>
+        <section class="card" style="max-width: 320px">
 
-                    <p>
-                        Breve descripción del proyecto, explicando
-                        su objetivo y las funciones principales.
-                    </p>
+            <img src="./IMAGENES/EleanorAccoladeGlyph.webp" class="card-img-top" alt="Proyecto 2">
+            <div class="card-body">
 
-                    <div class="tecnologias">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
+                <h2 class="card-title">Nombre del proyecto</h2>
 
-                    <a href="#" class="btn-proyecto">Ver proyecto ↗</a>
-                </div>
-            </article>
+                <p class="card-text">
+                    Breve descripción del proyecto y
+                    de lo que desarrollaste en él.
+                </p>
 
-        
-            <article class="tarjeta">
-                <div class="imagen">
-                    <img src="img/proyecto2.png" alt="Proyecto 2">
+                <div class="card-footer">
+                    <span>HTML</span>
+                    <span>CSS</span>
                 </div>
 
-                <div class="contenido">
-                    <span class="categoria">Diseño</span>
+                <a href="#" class="btn-solid theme-primary">Ver proyecto ↗</a>
+            </div>
+        </section>
 
-                    <h2>Nombre del proyecto</h2>
-
-                    <p>
-                        Breve descripción del proyecto y
-                        de lo que desarrollaste en él.
-                    </p>
-
-                    <div class="tecnologias">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-
-                    <a href="#" class="btn-proyecto">Ver proyecto ↗</a>
+        <section class="card" style="max-width: 320px">
+            <img src="./IMAGENES/EleanorAccoladeGlyph.webp" class="card-img-top" alt="Proyecto 3">
+            <div class="card-body">
+                <h2 class="card-title">Nombre del proyecto</h2>
+                <p class="card-text">
+                    Breve descripción del proyecto y
+                    de sus características principales.
+                </p>
+                <div class="card-footer">
+                    <span>HTML</span>
+                    <span>CSS</span>
                 </div>
-            </article>
-
-            <article class="tarjeta">
-                <div class="imagen">
-                    <img src="img/proyecto3.png" alt="Proyecto 3">
-                </div>
-
-                <div class="contenido">
-                    <span class="categoria">Aplicación</span>
-
-                    <h2>Nombre del proyecto</h2>
-
-                    <p>
-                        Breve descripción del proyecto y
-                        de sus características principales.
-                    </p>
-
-                    <div class="tecnologias">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-
-                    <a href="#" class="btn-proyecto">Ver proyecto ↗</a>
-                </div>
-            </article>
-
-        </div>
+                <a href="#" class="btn-solid theme-primary">Ver proyecto ↗</a>
+            </div>
+        </section>
 
 
-    </section>
+    </main>
 </body>
 
 </html>
