@@ -7,42 +7,67 @@
     <meta name="theme-color" content="#171717">
     <title>Mi Perfil Profesional</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./grid.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <h1>Mi Perfil Profesional</h1>
-        <a href="./mproyect.html"><h2>Mis Proyectos</h2></a>
+    <header class="header my-3 ">
+        <nav class="nav justify-content-between justify-content-center nav-tabs p-5 fg-success fg-50">
+            <h1 class="nav-item font-monospace ">Mi Perfil Profesional</h1>
+            <a class="nav-link-active text-decoration-none fg-success fg-50 font-monospace" href="./mproyect.html">
+                <h2>Mis Proyectos</h2>
+            </a>
+        </nav>
     </header>
-    <main class="contenedor">
-        <section class="perfil">
-            <div class="cuadro1"><img src="./IMAGENES/EleanorAccoladeGlyph.webp" alt="Foto de perfil"></div>
-            <div class="cuadro2">
-                Santiago Saldarriaga
-                <br>
-                Mis Habilidades
-                <ul>
-                    <li>HTML y CSS</li>
-                    <li>JavaScript</li>
-                    <li>C++</li>
-                    <li>Git y GitHub</li>
-                    <li>SQL</li>
-                </ul>
-                Contacto:
-                <br>
-                3002126082
-                <i class="bi bi-whatsapp"></i>
-                <br>
-                Santiagosaldarriagasaldarriaga@gmail.com
-                <i class="bi bi-envelope-at-fill"></i>
-                <br>
-                santiago saldarriaga
-                <i class="bi bi-linkedin"></i>
+    <main class="max-h-100 d-grid font-monospace" style="grid-template-columns: 800px 1fr ">
+        <section class="contenedor d-flex flex-column bg-muted-success ">
+            <div class="d-flex justify-content-center m-5"><img src="./IMAGENES/EleanorAccoladeGlyph.webp"
+                    alt="Foto de perfil"></div>
+            <div class="card shadow-sm border-0 m-5">
+                <div class="card-body p-4">
+                    <h2 class="card-title text-center mb-4">Santiago Saldarriaga</h2>
+                    <section class="mb-4" aria-labelledby="habilidades-title">
+                        <h3 id="habilidades-title" class="h5 mb-3">Mis habilidades</h3>
+                        <br>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item px-0">HTML y CSS</li>
+                            <br>
+                            <li class="list-group-item px-0">JavaScript</li>
+                            <br>
+                            <li class="list-group-item px-0">C++</li>
+                            <br>
+                            <li class="list-group-item px-0">Git y GitHub</li>
+                            <br>
+                            <li class="list-group-item px-0">SQL</li>
+                        </ul>
+                    </section>
+
+                    <section aria-labelledby="contacto-title">
+                        <h3 id="contacto-title" class="h5 mb-3">Contacto</h3>
+                        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="bi bi-whatsapp text-success" aria-hidden="true"></i>
+                                <a class="text-decoration-none text-dark" href="tel:3002126082">300 212 6082</a>
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="bi bi-envelope-at-fill text-danger" aria-hidden="true"></i>
+                                <a class="text-decoration-none text-dark"
+                                    href="mailto:Santiagosaldarriagasaldarriaga@gmail.com">
+                                    Santiagosaldarriagasaldarriaga@gmail.com
+                                </a>
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="bi bi-linkedin text-primary" aria-hidden="true"></i>
+                                <span>santiago saldarriaga</span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
             </div>
         </section>
-        <section class="informacion">
-            <div class="descripcion">
+        <section class="d-flex flex-column  bg-muted-success p-5 ">
+            <article class="d-flex align-items-center justify-content-center bg-muted-secondary bg-90 w-100 h-100">
                 Soy una persona apasionada por la tecnología y el desarrollo de software, con conocimientos en
                 desarrollo web y programación. Cuento con habilidades en HTML, CSS y JavaScript para la creación de
                 páginas web, así como conocimientos en C++ y SQL para el desarrollo de soluciones lógicas y gestión de
@@ -50,9 +75,12 @@
                 Además, manejo herramientas como Git y GitHub para el control de versiones y la gestión de proyectos. Me
                 caracterizo por tener disposición para aprender, mejorar continuamente mis habilidades y afrontar nuevos
                 retos en el mundo de la programación.
-            </div>
+            </article>
         </section>
     </main>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
