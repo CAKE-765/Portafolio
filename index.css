@@ -1,0 +1,28 @@
+.perfil-layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+}
+
+.contenedor img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .perfil-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .header nav {
+        padding: 1.5rem !important;
+        gap: 1rem;
+    }
+
+    .header nav h1,
+    .header nav h2 {
+        font-size: clamp(1.25rem, 5vw, 2rem);
+    }
+
+    .card-body a {
+        overflow-wrap: anywhere;
+    }
+}
